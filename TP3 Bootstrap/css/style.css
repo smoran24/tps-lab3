@@ -1,16 +1,28 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+@font-face {
+    font-family: 'RaleWay'; /*Nombre de la fuente a usar al nombrarla*/
+    src: url("../font/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: 'OpenSans'; /*Nombre de la fuente a usar al nombrarla*/
+    src: url("../font/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
 body{
-    @font-face {
-        font-family: RaleWay;
-        src: url("../font/Raleway-VariableFont_wght");
-    }
+    font-family: 'OpenSans';
+    font-weight:400;
+}
+body h2{
+    font-weight:700;
 }
 
 #cabecera{
     margin:0em;
     padding:2em;
+    font-family: 'RaleWay';
+    font-weight:400;
 }
 #cabecera li{
     float:right; /*tuve que poner los items de la list en orden inverso para que este float los acomode bien*/
@@ -65,6 +77,14 @@ blockquote {
 blockquote{
     padding:1em;
     width: 300px;
+}
+blockquote #fotito{
+    float:left;
+    border-radius: 50%;
+}
+blockquote ul li{
+    color:hsl(243, 87%, 12%);
+    list-style: none;
 }
 
 #cuartaSeccion{
