@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.O.M. - Ejercicio 1</title>
+</head>
+<body>
+
+
+    <script src="gastos.js"></script> <!--vinculo el script externo al html-->
+    <script> //script interno, el que se encargará de generar funciones al cargar la página
+        function alCargar() {
+            let opcionVentana = confirm("Bienvenido. ¿Desea iniciar el reporte de gastos familiar?"); //muestra una ventana de tipo confirm al iniciar, guarda su valor (opcion elegida) en una variable
+            if (opcionVentana == true){ //si el usuario hace click en aceptar
+                //no hacer nada, proceder.
+            }else{
+                alert("Gracias por haber venido")
+                window.location.replace("https://www.netflix.com/ar/");
+            }
+        }
+      window.onload = alCargar; //ejecuta la funcion alCargar cuando carga la ventana
+    </script>
+</body>
+</html>
